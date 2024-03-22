@@ -1,0 +1,44 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".container");
+  const startMessage = document.getElementById("startMessage");
+  const backgroundAudio = document.getElementById("backgroundAudio");
+
+  // Hide container and start message when user clicks anywhere on the page
+  document.addEventListener("click", function () {
+    startMessage.style.visibility = "hidden";
+    setInterval(() => {
+      container.style.visibility = "visible";
+    }, 500);
+    playBackgroundAudio();
+  });
+
+  // Play background audio
+  function playBackgroundAudio() {
+    if (backgroundAudio) {
+      backgroundAudio.play().catch((error) => {
+        // Auto-play was prevented by the browser
+        console.error("Auto-play prevented:", error);
+      });
+    }
+  }
+
+  // Trigger playBackgroundAudio() on initial user interaction
+  document.addEventListener("click", playBackgroundAudio);
+
+  // Additionally, hide elements when the page loads initially
+  hideElements();
+});
+
+const invite = document.querySelector(".earn");
+const help = document.querySelector(".help");
+const cmd = document.querySelector(".cmds");
+
+cmd.addEventListener("click", function () {
+  window.open("http://127.0.0.1:5500/cmds/index.html", "_blank");
+});
+invite.addEventListener("click", function () {
+  window.open("http://127.0.0.1:5500/buy/index.html", "_blank");
+});
+help.addEventListener("click", function () {
+  window.open("http://127.0.0.1:5500/help/index.html", "_blank");
+});

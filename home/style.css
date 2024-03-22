@@ -6,6 +6,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
+    flex-direction: column;
     width: 100vw;
     overflow: hidden;
 }
@@ -17,7 +18,7 @@ video {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-  }
+}
 
 song {
     width: 0px;
@@ -27,41 +28,17 @@ song {
     z-index: 15;
 }
 
-.container {
-    background-color: rgb(25, 25, 25);
-    border: 5px solid #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-    animation: bounce 0.45s infinite ease-in-out;
-    visibility: hidden;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.02);
-    }
-}
-
 .logo {
-    border-radius: 100px;
+    border-radius: 200px;
     border: 5px solid #ffffff;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 900;
-    background: -webkit-linear-gradient(45deg, #ffffff, #787878);
+    background: -webkit-linear-gradient(45deg, #f4ffc0, #ffffff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
@@ -71,7 +48,7 @@ h1 {
 }
 
 h1:hover {
-    font-size: 65px;
+    font-size: 71px;
     cursor: pointer;
     transition: all 500ms;
     background-color: #555;
@@ -83,7 +60,7 @@ h1:hover {
 
 p {
     margin: 0px;
-    color: rgb(25, 25, 25);
+    color: rgb(156, 156, 156);
     font-size: 13px;
     font-weight: 600;
     transition: all 500ms;
@@ -95,7 +72,7 @@ p:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: all 500ms;
-    color: white;
+    color: rgb(211, 211, 211);
 }
 
 .buttons {
@@ -109,16 +86,17 @@ button {
     box-shadow: 0px 0px 10px whitesmoke;
     transition: all 500ms;
     border: none;
-    margin: 1.5px;
+    margin: 4.5px;
     margin-top: 15px;
-    width: 130px;
-    height: 50px;
-    font-size: 13px;
+    width: 160px;
+    height: 80px;
+    font-size: 20px;
     text-shadow: rgb(31, 31, 31) 1px 0 10px;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-button:hover, button:active {
+button:hover,
+button:active {
     transform: scale(1.5);
     cursor: pointer;
     transform: translateY(-5px);
@@ -126,61 +104,43 @@ button:hover, button:active {
 }
 
 .help {
-    background-image: url(../assets/banner1.jpg);
+    background-color: rgb(26, 26, 26);
     background-position: center;
     background-size: cover;
     border: 0.5px solid rgb(221, 221, 221);
     border-radius: 20px;
     text-align: center;
 }
+
 .help:hover {
     transition: all 500ms;
-    background-color: green;
+    background-color: rgb(24, 24, 24);
 }
 
 .cmds {
-    background-image: url(../assets/banner2.jpg);
+    background-color: rgb(26, 26, 26);
     background-position: center;
     background-size: cover;
     border: 0.5px solid rgb(221, 221, 221);
     border-radius: 20px;
     text-align: center;
-} 
+}
 
 .cmds:hover {
     transition: all 500ms;
-    background-color: dimgrey;
+    background-color: rgb(24, 24, 24);
 }
 
 .earn {
-    background-image: url(../assets/banner3.jpg);
+    background-color: rgb(26, 26, 26);
     background-position: center;
     background-size: cover;
     border: 0.5px solid rgb(221, 221, 221);
     border-radius: 20px;
     text-align: center;
-} 
+}
+
 .earn:hover {
     transition: all 500ms;
-    background-color: rgb(94, 117, 198);
-}
-
-#startMessage {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    opacity: 40%;
-    transition: all 500ms;
-}
-
-#startMessage:hover {
-    opacity: 0.5;
-    font-size: 28px;
-    cursor: pointer;
-    transition: all 500ms;
+    background-color: rgb(24, 24, 24);
 }

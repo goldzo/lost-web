@@ -3,15 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const startMessage = document.getElementById("startMessage");
   const backgroundAudio = document.getElementById("backgroundAudio");
 
-  // Hide container and start message when user clicks anywhere on the page
-  document.addEventListener("click", function () {
-    startMessage.style.visibility = "hidden";
-    setInterval(() => {
-      container.style.visibility = "visible";
-    }, 500);
-    playBackgroundAudio();
-  });
-
   // Play background audio
   function playBackgroundAudio() {
     if (backgroundAudio) {

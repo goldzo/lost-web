@@ -34,11 +34,11 @@ const help = document.querySelector(".help");
 const cmd = document.querySelector(".cmds");
 
 cmd.addEventListener("click", function () {
-  window.open("http://127.0.0.1:5500/cmds/index.html", "_blank");
+  window.open("http://lostfr.vercel.app/cmds/", "_blank");
 });
 invite.addEventListener("click", function () {
-  window.open("http://127.0.0.1:5500/buy/index.html", "_blank");
+  window.open("http://lostfr.vercel.app/buy/", "_blank");
 });
 help.addEventListener("click", function () {
-  window.open("http://127.0.0.1:5500/help/index.html", "_blank");
+  window.open("http://lostfr.vercel.app/help/", "_blank");
 });

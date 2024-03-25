@@ -1,0 +1,140 @@
+body {
+    background-color: #111111;
+    margin: 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-top{
+    background-color: rgb(20, 18, 26, .5);
+    box-shadow: 0 0 1rem rgb(0, 0, 0, .5);
+    text-align: left;
+    padding: 2vh 1.5rem;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.nav-img{
+    float: right;
+}
+
+.nav-img img{
+    margin-top: -22.5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.divider {
+    height: 12vh;
+}
+
+.container {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.top{
+    float: left;
+    width: 29.3%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 19px;
+    color: rgb(175, 175, 175);
+}
+
+.command-section {
+    clear: both;
+    float: left;
+    width: 20%;
+    background-color: #23212b;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, .5);
+}
+
+ul {
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+ul .closed {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul .open {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul .open:hover {
+    background-color: #1a1a1f !important;
+}
+
+.command-list {
+    float: right;
+    width: 69%;
+    margin-top: -12.5%;
+    background-color: #23212b;
+    border-radius: 10px;
+    padding: 1rem 0;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, .5);
+}
+
+table{
+    width: 94%;
+    margin-left: 3%;
+    border-collapse: collapse;
+}
+table th{
+    padding: .8rem 1rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+tr:first-child {
+    border-top: none;
+    border-bottom: none;
+  }
+  tr:last-child {
+    border-bottom: none;
+  }
+
+table tr {
+    padding: .8rem 0;
+    border-bottom: px solid #1a1a1f;
+}
+
+table tr:hover:not(:first-child) {
+    background-color: #1a1a1f;
+}
+
+table td{
+    width: calc(100%/3);
+    padding: .8rem 1rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+table tr td:first-child{
+    color: #d3d3d3;
+    font-weight: 700;
+}
+
+table tr td:last-child{
+    color: rgb(125, 122, 133);
+}

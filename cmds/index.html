@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="next-size-adjust">
+    <title>Greed Commands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="nav-top">
+        Greed Commands
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+        <div class="top">
+            <h1>Commands</h1>
+            <h3>Beta・still adding!</h3>
+        </div>
+        <div class="command-section">
+            <ul>
+                <li class="closed" id="1" onclick="change_board(this)">Moderation</li>
+                <li class="open" id="2" onclick="change_board(this)">Roleplay</li>
+                <li class="open" id="3" onclick="change_board(this)">Economy</li>
+                <li class="open" id="4" onclick="change_board(this)">Fun</li>
+                <li class="open" id="5" onclick="change_board(this)">Utility</li>
+                <li class="open" id="6" onclick="change_board(this)">NSFW</li>
+                <li class="open" id="7" onclick="change_board(this)">Info</li>
+            </ul>
+        </div>
+        <div class="command-list">
+            <table class="commands" id="board1">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                  <td>ban</td>
+                  <td>ban someone</td>
+                  <td>>ban [user]</td>
+                </tr>
+                <tr>
+                  <td>unban</td>
+                  <td>unban someone</td>
+                  <td>>unban [user]</td>
+                </tr>
+                <tr>
+                  <td>kick</td>
+                  <td>kick someone</td>
+                  <td>>kick [user]</td>
+                </tr>
+                <tr>
+                  <td>mute</td>
+                  <td>mute someone</td>
+                  <td>>mute [user]</td>
+                </tr>
+                <tr>
+                  <td>lock</td>
+                  <td>lock channel</td>
+                  <td>>lock [channel]</td>
+                </tr>
+                <tr>
+                  <td>unlock</td>
+                  <td>unlock channel</td>
+                  <td>>unlock [channel]</td>
+                </tr>
+                <tr>
+                  <td>hide</td>
+                  <td>hide channel</td>
+                  <td>>hide [channel]</td>
+                </tr>
+                <tr>
+                  <td>unhide</td>
+                  <td>unhide channel</td>
+                  <td>>unhide [channel]</td>
+                </tr>
+                <tr>
+                  <td>role</td>
+                  <td>give a role</td>
+                  <td>>role [user] [/role]</td>
+                </tr>
+                <tr>
+                  <td>create role</td>
+                  <td>create a new role</td>
+                  <td>>create role [name]</td>
+                </tr>
+                <tr>
+                  <td>delete role</td>
+                  <td>delete a role</td>
+                  <td>>delete role [name]</td>
+                </tr>
+            </table>
+
+            <table class="commands" id="board2">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                  <td>Kiss</td>
+                  <td>Kiss someone</td>
+                  <td>>kiss [user]</td>
+                </tr>
+                <tr>
+                  <td>Touch</td>
+                  <td>Touch someone</td>
+                  <td>>touch [user]</td>
+                </tr>
+                <tr>
+                  <td>Lewd</td>
+                  <td>Act lewd</td>
+                  <td>>lewd [user]</td>
+                </tr>
+                <tr>
+                  <td>Hug</td>
+                  <td>Hug someone</td>
+                  <td>>hug [user]</td>
+                </tr>
+                <tr>
+                  <td>Punch</td>
+                  <td>Punch someone</td>
+                  <td>>punch [user]</td>
+                </tr>
+                <tr>
+                  <td>Kill</td>
+                  <td>Kill someone</td>
+                  <td>>kill [user]</td>
+                </tr>
+                <tr>
+                  <td>Shoot</td>
+                  <td>Shoot someone</td>
+                  <td>>shoot [user]</td>
+                </tr>
+                <tr>
+                  <td>Bite</td>
+                  <td>Bite someone</td>
+                  <td>>bite [user]</td>
+                </tr>
+                <tr>
+                  <td>Wave</td>
+                  <td>Wave at someone</td>
+                  <td>>wave [user]</td>
+                </tr>
+                <tr>
+                  <td>Cry</td>
+                  <td>Cry</td>
+                  <td>>cry</td>
+                </tr>
+                <tr>
+                  <td>Dance</td>
+                  <td>Dance</td>
+                  <td>>dance</td>
+                </tr>
+                <tr>
+                  <td>Cringe</td>
+                  <td>Feel cringe</td>
+                  <td>>cringe</td>
+                </tr>
+                <tr>
+                  <td>Smile</td>
+                  <td>Smile</td>
+                  <td>>smile</td>
+                </tr>
+                <tr>
+                  <td>Bonk</td>
+                  <td>Bonk someone</td>
+                  <td>>bonk [user]</td>
+                </tr>
+                <tr>
+                  <td>Highfive</td>
+                  <td>Highfive someone</td>
+                  <td>>highfive [user]</td>
+                </tr>
+                <tr>
+                  <td>Awoo</td>
+                  <td>Howl like a wolf</td>
+                  <td>>awoo</td>
+                </tr>
+                <tr>
+                  <td>Ship</td>
+                  <td>Ship two users</td>
+                  <td>>ship [user1] [user2]</td>
+                </tr>
+                <tr>
+                  <td>Pat</td>
+                  <td>Pat someone</td>
+                  <td>>pat [user]</td>
+                </tr>
+                <tr>
+                  <td>Slap</td>
+                  <td>Slap someone</td>
+                  <td>>slap [user]</td>
+                </tr>
+                <tr>
+                  <td>Dap</td>
+                  <td>Give dap to someone</td>
+                  <td>>dap [user]</td>
+                </tr>
+                <tr>
+                  <td>Gay</td>
+                  <td>Act gay</td>
+                  <td>>gay [user]</td>
+                </tr>
+                <tr>
+                  <td>Bitches</td>
+                  <td>How many girls?</td>
+                  <td>>bitches [user]</td>
+                </tr>
+            </table>
+
+            <table class="commands" id="board3">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                  <td>Coinflip</td>
+                  <td>Flip a coin for a chance to win</td>
+                  <td>>coinflip [heads/tails] [amount]</td>
+                </tr>
+                <tr>
+                  <td>Slots</td>
+                  <td>Play a slot machine game</td>
+                  <td>>slots [amount]</td>
+                </tr>
+                <tr>
+                  <td>Black Jack</td>
+                  <td>Play a game of Black Jack</td>
+                  <td>>blackjack [amount]</td>
+                </tr>
+                <tr>
+                  <td>Bet</td>
+                  <td>Place a bet on an outcome</td>
+                  <td>>bet [amount] [option]</td>
+                </tr>
+                <tr>
+                  <td>Daily</td>
+                  <td>Collect your daily reward</td>
+                  <td>>daily</td>
+                </tr>
+            </table>
+
+            <table class="commands" id="board4">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                  <td>8ball</td>
+                  <td>Ask the magic 8-ball a question</td>
+                  <td>>8ball [question]</td>
+                </tr>
+                <tr>
+                  <td>Would You Rather</td>
+                  <td>Play a game of "Would You Rather"</td>
+                  <td>>wyr [option1] [option2]</td>
+                </tr>
+                <tr>
+                  <td>Bomb</td>
+                  <td>Drop a bomb on someone</td>
+                  <td>>bomb [user]</td>
+                </tr>
+                <tr>
+                  <td>Truth</td>
+                  <td>Challenge someone with a truth</td>
+                  <td>>truth [user]</td>
+                </tr>
+                <tr>
+                  <td>Dare</td>
+                  <td>Challenge someone with a dare</td>
+                  <td>>dare [user]</td>
+                </tr>
+                <tr>
+                  <td>Crazy Dare</td>
+                  <td>Challenge someone with a crazy dare</td>
+                  <td>>crazydare [user]</td>
+                </tr>
+                <tr>
+                  <td>RPS</td>
+                  <td>Play Rock, Paper, Scissors with the bot</td>
+                  <td>>rps [choice]</td>
+                </tr>
+                <tr>
+                  <td>AI</td>
+                  <td>Interact with an AI</td>
+                  <td>>ai [question]</td>
+                </tr>
+                <tr>
+                  <td>PP</td>
+                  <td>Check someone's PP size</td>
+                  <td>>pp [user]</td>
+                </tr>
+            </table>
+
+            <table class="commands" id="board5">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                  <td>Avatar</td>
+                  <td>Show the avatar of a user</td>
+                  <td>>avatar [user]</td>
+                </tr>
+                <tr>
+                  <td>Search</td>
+                  <td>Search for something online</td>
+                  <td>>search [query]</td>
+                </tr>
+                <tr>
+                  <td>Server Info</td>
+                  <td>Display information about the server</td>
+                  <td>>server info</td>
+                </tr>
+                <tr>
+                  <td>User Info</td>
+                  <td>Display information about a user</td>
+                  <td>>user info [user]</td>
+                </tr>
+                <tr>
+                  <td>Define</td>
+                  <td>Get the definition of a word</td>
+                  <td>>define [word]</td>
+                </tr>
+                <tr>
+                  <td>Weather</td>
+                  <td>Check the weather in a location</td>
+                  <td>>weather [location]</td>
+                </tr>
+                <tr>
+                  <td>Image</td>
+                  <td>Search for an image</td>
+                  <td>>image [query]</td>
+                </tr>
+                <tr>
+                  <td>Purge</td>
+                  <td>Delete messages from a channel</td>
+                  <td>>purge [amount]</td>
+                </tr>
+                <tr>
+                  <td>Vanity</td>
+                  <td>View the vanity URL of a user</td>
+                  <td>>vanity [user]</td>
+                </tr>
+                <tr>
+                  <td>Pin</td>
+                  <td>Pin a message</td>
+                  <td>>pin [message]</td>
+                </tr>
+                <tr>
+                  <td>Poll</td>
+                  <td>Create a poll</td>
+                  <td>>poll [question]</td>
+                </tr>
+                <tr>
+                  <td>Lyrics</td>
+                  <td>Get the lyrics of a song</td>
+                  <td>>lyrics [song]</td>
+                </tr>
+                <tr>
+                  <td>Screen Shot</td>
+                  <td>Take a screenshot of a webpage</td>
+                  <td>>screenshot [url]</td>
+                </tr>
+
+            <table class="commands" id="board6">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                  <td>Catgirl</td>
+                  <td>View a catgirl</td>
+                  <td>>nsfw catgirl</td>
+                </tr>
+                <tr>
+                  <td>Waifu</td>
+                  <td>View a waifu</td>
+                  <td>>nsfw waifu</td>
+                </tr>
+                <tr>
+                  <td>NSFW</td>
+                  <td>View general NSFW.</td>
+                  <td>>nsfw</td>
+                </tr>
+                <tr>
+                  <td>Blowjob</td>
+                  <td>View blowjob content</td>
+                  <td>>nsfw bj</td>
+                </tr>
+                <tr>
+                  <td>Footjob</td>
+                  <td>View footjob content</td>
+                  <td>>nsfw fj</td>
+                </tr>
+            </table>
+            
+            <table class="commands" id="board7">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                    <td>prefix</td>
+                    <td>sets guild prefix</td>
+                    <td>;prefix [prefix]</td>
+                </tr>
+                <tr>
+                    <td>selfprefix</td>
+                    <td>sets selfprefix</td>
+                    <td>;selfprefix [prefix]</td>
+                </tr>
+                <tr>
+                    <td>restore</td>
+                    <td>give a member their roles back after rejoining</td>
+                    <td>;restore [user]</td>
+                </tr>
+                <tr>
+                    <td>starboard settings</td>
+                    <td>displays starboard settings</td>
+                    <td>;starboard settings</td>
+                </tr>
+                <tr>
+                    <td>starboard emoji</td>
+                    <td>sets starboard emoji</td>
+                    <td>;starboard emoji [emoji]</td>
+                </tr>
+                <tr>
+                    <td>purge</td>
+                    <td>pruges messages from a channel</td>
+                    <td>;purge [msg count]</td>
+                </tr>
+                <tr>
+                    <td>nickname</td>
+                    <td>sets user nickname</td>
+                    <td>;nickname [nickname]</td>
+                </tr>
+                <tr>
+                    <td>snipe</td>
+                    <td>snipes recently deleted messages</td>
+                    <td>;snipe</td>
+                </tr>
+                <tr>
+                    <td>editsnipe</td>
+                    <td>snipes recently edited messages</td>
+                    <td>;editsnipe</td>
+                </tr>
+                <tr>
+                    <td>reactionsnipe</td>
+                    <td>snipes recently removed reactions</td>
+                    <td>;reactionsnipe</td>
+                </tr>
+                <tr>
+                    <td>clearsnipes</td>
+                    <td>clears list of recently deleted messages</td>
+                    <td>;clearsnipes</td>
+                </tr>
+                <tr>
+                    <td>welcome add</td>
+                    <td>adds welcome message to a channel</td>
+                    <td>;welcome add [channel] [text or code]</td>
+                </tr>
+                <tr>
+                    <td>welcome config</td>
+                    <td>shows welcome configurations</td>
+                    <td>;welcome config</td>
+                </tr>
+                <tr>
+                    <td>welcome remove</td>
+                    <td>removes welcome messages from channel</td>
+                    <td>;welcome remove [channel]</td>
+                </tr>
+                <tr>
+                    <td>welcome reset</td>
+                    <td>resets welcomes message config</td>
+                    <td>;welcome reset</td>
+                </tr>
+                <tr>
+                    <td>welcome test</td>
+                    <td>tests welcome messages in channel</td>
+                    <td>;welcome test [channel]</td>
+                </tr>
+                <tr>
+                    <td>embedsetup</td>
+                    <td>easier way to setup an embed</td>
+                    <td>;embedsetup</td>
+                </tr>
+                <tr>
+                    <td>createembed</td>
+                    <td>create embed with embed code</td>
+                    <td>;createembed [code]</td>
+                </tr>
+                <tr>
+                    <td>editembed</td>
+                    <td>edits an embed</td>
+                    <td>;editembed [message id] [code]</td>
+                </tr>
+                <tr>
+                    <td>copyembed</td>
+                    <td>copies embed from a channel in your server</td>
+                    <td>;;copyembed [message id]</td>
+                </tr>
+                <tr>
+                    <td>boost add</td>
+                    <td>adds booster message to channel</td>
+                    <td>;boost add [channel] [text or code]</td>
+                </tr>
+                <tr>
+                    <td>boost remove</td>
+                    <td>removes booster message from channel</td>
+                    <td>;boost remove [channel</td>
+                </tr>
+                <tr>
+                    <td>boost config</td>
+                    <td>shows config of booster message</td>
+                    <td>;boost config</td>
+                </tr>
+                <tr>
+                    <td>boost test</td>
+                    <td>tests booster message</td>
+                    <td>;boost test [channel]</td>
+                </tr>
+                <tr>
+                    <td>boost reset</td>
+                    <td>resets booster message config</td>
+                    <td>;boost reset</td>
+                </tr>
+                <tr>
+                    <td>boosterrole setup</td>
+                    <td>setup booster role</td>
+                    <td>;boosterrole setup</td>
+                </tr>
+                <tr>
+                    <td>boosterrole base</td>
+                    <td>baserole for boosters</td>
+                    <td>;boosterrole base [default boost role]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole create</td>
+                    <td>create custom booster role</td>
+                    <td>;boosterrole create [text]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole delete</td>
+                    <td>delete custom booster role</td>
+                    <td>;boosterrole delete [role]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole icon</td>
+                    <td>set custom boosterrole icon</td>
+                    <td>;boosterrole icon [emoji]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole name</td>
+                    <td>set custom booster role name</td>
+                    <td>;boosterrole name [text]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole color</td>
+                    <td>set custom booster role color</td>
+                    <td>;boosterrole color [hex]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole list</td>
+                    <td>list of booster roles</td>
+                    <td>;boosterrole list</td>
+                </tr>
+                <tr>
+                    <td>boosterrole reset</td>
+                    <td>reset booster role config</td>
+                    <td>;boosterrole reset</td>
+                </tr>
+                <tr>
+                    <td>boosterrole award</td>
+                    <td>booster award</td>
+                    <td>;boosterrole award</td>
+                </tr>
+                <tr>
+                    <td>boosterrole award add</td>
+                    <td>add award for boosters</td>
+                    <td>;boosterrole award add [award]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole award remove</td>
+                    <td>remove award for boosters</td>
+                    <td>;boosterrole award remove [award]</td>
+                </tr>
+                <tr>
+                    <td>boosterrole award list</td>
+                    <td>list of awards for boosters</td>
+                    <td>;boosterrole award list</td>
+                </tr>
+                <tr>
+                    <td>editrole icon</td>
+                    <td>edits icon of role</td>
+                    <td>;editrole icon [role] [emoji]</td>
+                </tr>
+                <tr>
+                    <td>editrole hoist</td>
+                    <td>hoists specific role on sidebar</td>
+                    <td>;editrole hoist [role]</td>
+                </tr>
+                <tr>
+                    <td>editrole name</td>
+                    <td>edits the name of specific role</td>
+                    <td>;editrole name [role] [name]</td>
+                </tr>
+                <tr>
+                    <td>editrole color</td>
+                    <td>edits color of specific role</td>
+                    <td>;editrole color [role] [hex]</td>
+                </tr>
+                <tr>
+                    <td>autoresponder add</td>
+                    <td>adds auto response to specific text</td>
+                    <td>;autoresponder add [text], [response]</td>
+                </tr>
+                <tr>
+                    <td>autoresponder remove</td>
+                    <td>removes autoresponse for specific text</td>
+                    <td>;autoresponder remove [text]</td>
+                </tr>
+                <tr>
+                    <td>autoresponder list</td>
+                    <td>list of servers auto reponses</td>
+                    <td>;autoresponder list</td>
+                </tr>
+                <tr>
+                    <td>autoping add</td>
+                    <td>pings new users in channel then deletes right after</td>
+                    <td>;autoping add [channel]</td>
+                </tr>
+                <tr>
+                    <td>autoping remove</td>
+                    <td>removes autoping from channel</td>
+                    <td>;autoping remove [channel]</td>
+                </tr>
+                <tr>
+                    <td>autoping config</td>
+                    <td>shows autoping config</td>
+                    <td>;autoping config</td>
+                </tr>
+                <tr>
+                    <td>usertrack add</td>
+                    <td>adds username tracking to channel</td>
+                    <td>;usertrack add [channel]</td>
+                </tr>
+                <tr>
+                    <td>usertrack remove</td>
+                    <td>remove username tracking from channel</td>
+                    <td>;usertrack remove [channel]</td>
+                </tr>
+                <tr>
+                    <td>disablecmd</td>
+                    <td>disables desired command</td>
+                    <td>;disablecmd [command]</td>
+                </tr>
+                <tr>
+                    <td>enablecmd</td>
+                    <td>enables desired command</td>
+                    <td>;enablecmd [command]</td>
+                </tr>
+                <tr>
+                    <td>rank</td>
+                    <td>shows user level</td>
+                    <td>;rank [user]</td>
+                </tr>
+                <tr>
+                    <td>invoke mute</td>
+                    <td>add a custom mute message</td>
+                    <td>;invoke mute [text or code]</td>
+                </tr>
+                <tr>
+                    <td>invoke kick</td>
+                    <td>add a custom kick message</td>
+                    <td>;invoke kick [text or code]</td>
+                </tr>
+                <tr>
+                    <td>invoke ban</td>
+                    <td>add a custom ban message</td>
+                    <td>;invoke ban [text or code]</td>
+                </tr>
+                <tr>
+                    <td>invoke jail</td>
+                    <td>add a custom jail message6</td>
+                    <td>;invoke jail [text or code]</td>
+                </tr>
+                <tr>
+                    <td>invoke unmute</td>
+                    <td>add a custom unmute message</td>
+                    <td>;invoke unmute [text or code]</td>
+                </tr>
+                <tr>
+                    <td>invoke unban</td>
+                    <td>add a custom unban message</td>
+                    <td>;invoke unban [text or code]</td>
+                </tr>
+                <tr>
+                    <td>invoke unjail</td>
+                    <td>add a custom unjail message</td>
+                    <td>;invoke unjail [text or code]</td>
+                </tr>
+                <tr>
+                    <td>invoke variables</td>
+                    <td>returns invoke variables</td>
+                    <td>;invoke variables</td>
+                </tr>
+                <tr>
+                    <td>stickymessage add</td>
+                    <td>add a sticky message to the server</td>
+                    <td>;stickymessage add [channel] [text or code]</td>
+                </tr>
+                <tr>
+                    <td>stickymessage remove</td>
+                    <td>remove a sticky message from the server</td>
+                    <td>;stickymessage remove [channel]</td>
+                </tr>
+                <tr>
+                    <td>stickymessage config</td>
+                    <td>view any sticky message from any channel in the server</td>
+                    <td>;stickymessage config </td>
+                </tr>
+                <tr>
+                    <td>forcenickname</td>
+                    <td>forces nickname onto user</td>
+                    <td>;forcenickname [user] [nickname]</td>
+                </tr>
+                <tr>
+                    <td>clear contains</td>
+                    <td>clear messages that contain a certain word</td>
+                    <td>;clear contains [word]</td>
+                </tr>
+                <tr>
+                    <td>clear invites</td>
+                    <td>clear messages that contain discord invite links</td>
+                    <td>;clear invites</td>
+                </tr>
+                <tr>
+                    <td>clear images</td>
+                    <td>clear messages that have attachments</td>
+                    <td>;clear images</td>
+                </tr>
+                <tr>
+                    <td>joindm set</td>
+                    <td>dms message to all new uses that join</td>
+                    <td>;joindm set [text or code]</td>
+                </tr>
+                <tr>
+                    <td>joindm remove</td>
+                    <td>removes join direct message</td>
+                    <td>;joindm remove</td>
+                </tr>
+                <tr>
+                    <td>joindm config</td>
+                    <td>shows config of joindm module</td>
+                    <td>;joindm config</td>
+                </tr>
+                <tr>
+                    <td>servericon</td>
+                    <td>sends the icon of the server</td>
+                    <td>;servericon</td>
+                </tr>
+                <tr>
+                    <td>serverbanner</td>
+                    <td>sends the banner of the server</td>
+                    <td>;serverbanner</td>
+                </tr>
+                <tr>
+                    <td>serversplash</td>
+                    <td>sends the server invite background</td>
+                    <td>;serversplash</td>
+                </tr>
+                <tr>
+                    <td>seen</td>
+                    <td>how long ago a member was seen</td>
+                    <td>;seen [user]</td>
+                </tr>
+                <tr>
+                    <td>variables</td>
+                    <td>variables for embeds</td>
+                    <td>;variables</td>
+                </tr>
+                <tr>
+                    <td>afk</td>
+                    <td>sets afl message</td>
+                    <td>;afk [text]</td>
+                </tr>
+                <tr>
+                    <td>avatar</td>
+                    <td>gives avatar of mentioned used</td>
+                    <td>;avatar [user]</td>
+                </tr>
+                <tr>
+                    <td>avatarhistory</td>
+                    <td>collage of users avatarhistory</td>
+                    <td>;avatarhistory [user]</td>
+                </tr>
+                <tr>
+                    <td>clearavatars</td>
+                    <td>clears your avatar history</td>
+                    <td>;clearavatars</td>
+                </tr>
+                <tr>
+                    <td>autorole add</td>
+                    <td>adds role to be automatically given upon user join</td>
+                    <td>;autorole add [role]</td>
+                </tr>
+                <tr>
+                    <td>autorole remove</td>
+                    <td>remvoes automatic role</td>
+                    <td>;autorole remove [role]</td>
+                </tr>
+                <tr>
+                    <td>autorole clear</td>
+                    <td>clears automatic role config</td>
+                    <td>;autorole clear</td>
+                </tr>
+                <tr>
+                    <td>oldest</td>
+                    <td>shows oldest account in the server</td>
+                    <td>;oldest</td>
+                </tr>
+                <tr>
+                    <td>dominant</td>
+                    <td>get the dominant color of an image</td>
+                    <td>;dominant [image]</td>
+                </tr>
+                <tr>
+                    <td>quickpoll</td>
+                    <td>create a poll</td>
+                    <td>;quickpoll [question]</td>
+                </tr>
+            </table>
+            
+            <table class="commands" id="board8">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                    <td>capybara</td>
+                    <td>random pic of capybara</td>
+                    <td>;capybara</td>
+                </tr>
+                <tr>
+                    <td>bible</td>
+                    <td>random verse from the Bible</td>
+                    <td>;bible</td>
+                </tr>
+                <tr>
+                    <td>quran</td>
+                    <td>random verse from the Quran</td>
+                    <td>;quran</td>
+                </tr>
+                <tr>
+                    <td>gay</td>
+                    <td>gay rating</td>
+                    <td>;gay [user]</td>
+                </tr>
+                <tr>
+                    <td>pp</td>
+                    <td>shows pp size</td>
+                    <td>;pp [user]</td>
+                </tr>
+                <tr>
+                    <td>dog </td>
+                    <td>random pic of dog</td>
+                    <td>;dog</td>
+                </tr>
+                <tr>
+                    <td>birthday</td>
+                    <td>displays your birthday</td>
+                    <td>;birthday</td>
+                </tr>
+                <tr>
+                    <td>birthday set</td>
+                    <td>sets your birthday</td>
+                    <td>;birthday set [date]</td>
+                </tr>
+                <tr>
+                    <td>birthday unset</td>
+                    <td>removes your set birthday</td>
+                    <td>;birthday unset</td>
+                </tr>
+                <tr>
+                    <td>birthday list</td>
+                    <td>list of birthdays in server</td>
+                    <td>;birthday list</td>
+                </tr>
+                <tr>
+                    <td>timezone</td>
+                    <td>displays your timezone</td>
+                    <td>;timezone</td>
+                </tr>
+                <tr>
+                    <td>timezone set</td>
+                    <td>sets your timezone</td>
+                    <td>;timezone set</td>
+                </tr>
+                <tr>
+                    <td>timezone unset</td>
+                    <td>removes your set timezone</td>
+                    <td>;timezone unset</td>
+                </tr>
+                <tr>
+                    <td>timezone list</td>
+                    <td>List of peoples timezones in server</td>
+                    <td>;timezone list</td>
+                </tr>
+                <tr>
+                    <td>useless fact</td>
+                    <td>returns uselss fact</td>
+                    <td>;uselessfact</td>
+                </tr>
+                <tr>
+                    <td>pack</td>
+                    <td>packs specified user</td>
+                    <td>;pack [user]</td>
+                </tr>
+                <tr>
+                    <td>rockpaperscissors</td>
+                    <td>rps vs. specified user</td>
+                    <td>;rockpaperscissors [user]</td>
+                </tr>
+                <tr>
+                    <td>confessions add</td>
+                    <td>sets confessions channel</td>
+                    <td>;confessions add [text]</td>
+                </tr>
+                <tr>
+                    <td>confessions remove</td>
+                    <td>disable the confessions module</td>
+                    <td>;confessions remove [confession]</td>
+                </tr>
+                <tr>
+                    <td>confessions mute</td>
+                    <td>mute a member that sent a specific confession</td>
+                    <td>;confessions mute [confession]</td>
+                </tr>
+                <tr>
+                    <td>confessions unmute</td>
+                    <td>unmute a member that sent a specific confession</td>
+                    <td>;confessions unmute [confession]</td>
+                </tr>
+                <tr>
+                    <td>confessions channel</td>
+                    <td>gets confessions channel</td>
+                    <td>;confessions channel [channel]</td>
+                </tr>
+                <tr>
+                    <td>reminder add</td>
+                    <td>adds reminder</td>
+                    <td>;reminder add [text]</td>
+                </tr>
+                <tr>
+                    <td>reminder stop</td>
+                    <td>stops reminder</td>
+                    <td>;reminder stop</td>
+                </tr>
+                <tr>
+                    <td>blacktea</td>
+                    <td>plays blacktea with users that react2join</td>
+                    <td>;blacktea</td>
+                </tr>
+                <tr>
+                    <td>tts</td>
+                    <td>texttospeech</td>
+                    <td>;test [text]</td>
+                </tr>
+                <tr>
+                    <td>advice</td>
+                    <td>gives advice</td>
+                    <td>;advice</td>
+                </tr>
+                <tr>
+                    <td>uwuify</td>
+                    <td>uwuify's message</td>
+                    <td>;uwuify [text]</td>
+                </tr>
+                <tr>
+                    <td>tictactoe</td>
+                    <td>tictactoe vs. specified user</td>
+                    <td>;tictactoe [user]</td>
+                </tr>
+                <tr>
+                    <td>github</td>
+                    <td>searches given github account</td>
+                    <td>;github [github user]</td>
+                </tr>
+                <tr>
+                    <td>fortniteshop</td>
+                    <td>fortnite item shop</td>
+                    <td>;fortniteshop</td>
+                </tr>
+                <tr>
+                    <td>urban</td>
+                    <td>urban dictionary definition</td>
+                    <td>;urban [query]</td>
+                </tr>
+                <tr>
+                    <td>fyp</td>
+                    <td>tiktok fyp</td>
+                    <td>;fyp</td>
+                </tr>
+                <tr>
+                    <td>img</td>
+                    <td>searches imgs on google</td>
+                    <td>;img [query]</td>
+                </tr>
+                <tr>
+                    <td>screenshot</td>
+                    <td>screenshots given website</td>
+                    <td>;screenshot [website link]</td>
+                </tr>
+                <tr>
+                    <td>firstmessage</td>
+                    <td>gives jump link to first message sent in channel</td>
+                    <td>;firstmessage</td>
+                </tr>
+                <tr>
+                    <td>translate</td>
+                    <td>translates text</td>
+                    <td>;translate [text]</td>
+                </tr>
+                <tr>
+                    <td>transcribe</td>
+                    <td>transcribes a voice message</td>
+                    <td>;transcribe</td>
+                </tr>
+                <tr>
+                    <td>autopfp</td>
+                    <td>auto sends pfps in specified channel</td>
+                    <td>;autopfp [channel]</td>
+                </tr>
+            </table>
+            
+            <table class="commands" id="board9">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                    <td>play</td>
+                    <td>plays selected song</td>
+                    <td>;play [query]</td>
+                </tr>
+                <tr>
+                    <td>pause</td>
+                    <td>pauses music</td>
+                    <td>;pause</td>
+                </tr>
+                <tr>
+                    <td>resume</td>
+                    <td>resumes music</td>
+                    <td>;resume</td>
+                </tr>
+                <tr>
+                    <td>current</td>
+                    <td>shows current song playing</td>
+                    <td>;current</td>
+                </tr>
+                <tr>
+                    <td>volume</td>
+                    <td>sets volume higher or lower</td>
+                    <td>;volume [input]</td>
+                </tr>
+                <tr>
+                    <td>dc</td>
+                    <td>disconnects bot from channel</td>
+                    <td>;dc</td>
+                </tr>
+            </table>
+            
+            <table class="commands" id="board10">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                    <td>voicemaster setup</td>
+                    <td>setup for voicemaster</td>
+                    <td>;voicemaster setup</td>
+                </tr>
+                <tr>
+                    <td>voicemaster unsetup</td>
+                    <td>undo setup for voicemaster</td>
+                    <td>;voicemaster unsetup</td>
+                </tr>
+                <tr>
+                    <td>voice lock</td>
+                    <td>locks vc</td>
+                    <td>;voice lock</td>
+                </tr>
+                <tr>
+                    <td>voice reveal</td>
+                    <td>reveals vc</td>
+                    <td>;voice reveal</td>
+                </tr>
+                <tr>
+                    <td>voice reject</td>
+                    <td>rejects user from vc</td>
+                    <td>;voice reject [member]</td>
+                </tr>
+                <tr>
+                    <td>voice rename</td>
+                    <td>renames vc</td>
+                    <td>;voice rename [name]</td>
+                </tr>
+                <tr>
+                    <td>voice permit</td>
+                    <td>permits user into vc</td>
+                    <td>;voice permit [member]</td>
+                </tr>
+                <tr>
+                    <td>voice claim</td>
+                    <td>claims ownership of vc</td>
+                    <td>;voice claim</td>
+                </tr>
+                <tr>
+                    <td>voice unlock</td>
+                    <td>unlocks vc</td>
+                    <td>;voice unlock</td>
+                </tr>
+                <tr>
+                    <td>voice hide</td>
+                    <td>hides vc</td>
+                    <td>;voice hide</td>
+                </tr>
+                <tr>
+                    <td>voice transfer</td>
+                    <td>transfers ownership of vc</td>
+                    <td>;voice transfer [member]</td>
+                </tr>
+                <tr>
+                    <td>voice kick</td>
+                    <td>kicks user from vc</td>
+                    <td>;voice kick [member]</td>
+                </tr>
+            </table>
+
+            <table class="commands" id="board11">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                    <td>kiss</td>
+                    <td>kisses specified user</td>
+                    <td>;kiss [user]</td>
+                </tr>
+                <tr>
+                    <td>ship</td>
+                    <td>ships you with specified user</td>
+                    <td>;ship [user]</td>
+                </tr>
+                <tr>
+                    <td>hug</td>
+                    <td>hugs specified user</td>
+                    <td>;hug [user]</td>
+                </tr>
+                <tr>
+                    <td>cuddle</td>
+                    <td>cuddles specified user</td>
+                    <td>;cuddle [user]</td>
+                </tr>
+                <tr>
+                    <td>laugh</td>
+                    <td>kinda self explanitory</td>
+                    <td>;laugh</td>
+                </tr>
+                <tr>
+                    <td>cry</td>
+                    <td>also self explanitory</td>
+                    <td>;cry</td>
+                </tr>
+                <tr>
+                    <td>pat</td>
+                    <td>pats specified user</td>
+                    <td>;pat [user]</td>
+                </tr>
+                <tr>
+                    <td>slap</td>
+                    <td>slaps specified user</td>
+                    <td>;slap [user]</td>
+                </tr>
+                <tr>
+                    <td>marry</td>
+                    <td>requests to marry specified user</td>
+                    <td>;marry [user]</td>
+                </tr>
+                <tr>
+                    <td>divorce</td>
+                    <td>divorces specified user</td>
+                    <td>;divorce [user]</td>
+                </tr>
+                <tr>
+                    <td>marriage</td>
+                    <td>marriage status</td>
+                    <td>;marriage</td>
+                </tr>
+                <tr>
+                    <td>spit</td>
+                    <td>spits on specified user</td>
+                    <td>;spit [user]</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="divider"></div>
+</body>
+<script>
+
+    document.getElementById('board1').style.display = 'block';
+    for (let i = 1; i <= 11; i++){
+        if (i != Number('1')){
+            console.log(document.getElementById('board' + String(i)));
+            document.getElementById('board' + String(i)).style.display = 'none';
+        }
+    }
+
+    document.getElementById('1').style.backgroundColor = '#111111';
+    for (let i = 1; i <= 11; i++){
+        if (i != Number('1')){
+            document.getElementById(String(i)).style.backgroundColor = 'transparent';
+        }
+    }
+
+    function change_board(el){
+        btn_id = el.id;
+        board_id = 'board' + btn_id;
+
+        document.getElementById(board_id).style.display = 'block';
+        for (let i = 1; i <= 11; i++){
+            if (i != Number(btn_id)){
+                document.getElementById('board' + String(i)).style.display = 'none';
+            }
+        }
+
+        document.getElementById(btn_id).style.backgroundColor = '#111111';
+        document.getElementById(btn_id).className = 'closed';
+        for (let i = 1; i <= 11; i++){
+            if (i != Number(btn_id)){
+                document.getElementById(String(i)).style.backgroundColor = 'transparent';
+                document.getElementById(String(i)).className = 'open';
+            }
+        }
+    }
+</script>
+</html>
